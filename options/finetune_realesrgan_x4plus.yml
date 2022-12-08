@@ -38,7 +38,7 @@ datasets:
   train:
     name: New
     type: RealESRGANDataset
-    dataroot_gt: /content/drive/MyDrive/KHUGGLE_FINAL/khuggle_train_clean/khuggle_train_clean_hr
+    dataroot_gt: /content/khuggle_train_clean/khuggle_train_clean_hr
     meta_info: /content/khuggle_sy/meta_info_lr.txt
     io_backend:
       type: disk
@@ -99,10 +99,10 @@ network_d:
 # path
 path:
   # use the pre-trained Real-ESRNet model
-  pretrain_network_g: /content/drive/MyDrive/KHUGGLE_FINAL/Real-ESRGAN/experiments/pretrained_models/RealESRNet_x4plus.pth
+  pretrain_network_g: /content/khuggle_sy/experiments/pretrained_model/RealESRNet_x4plus.pth
   param_key_g: params_ema
   strict_load_g: true
-  pretrain_network_d: /content/drive/MyDrive/KHUGGLE_FINAL/Real-ESRGAN/experiments/pretrained_models/RealESRGAN_x4plus_netD.pth
+  pretrain_network_d: /content/khuggle_sy/experiments/pretrained_model/RealESRGAN_x4plus_netD.pth
   param_key_d: params
   strict_load_d: true
   resume_state: ~
